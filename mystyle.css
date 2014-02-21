@@ -1,0 +1,94 @@
+
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: table;
+}
+
+.overlay .questionBlockWrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay .questionBlockWrapper .questionBlock {    
+    display: inline-block;
+    padding: 8px;
+    background-color: white;
+    opacity: 0.75;
+    font-family: "Futura";
+    border-radius: 5px;
+    max-width: 30%;
+}
+
+.imageWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-style: none;
+}
+
+.imageWrapper .image {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    transition: background-size 0.5s;
+    -moz-transition: background-size 0.5s;
+    -ms-transition: background-size 0.5s;
+    -o-transition: background-size 0.5s;
+    -webkit-transition: background-size 0.5s;
+}
+
+.imageWrapper .image:hover {
+    background: white;
+    background-size: 90% 90%;
+}
+
+.clickArea {
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+}
+
+.choiseBlock {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    border-style: none;
+}
+
+#topLeftChoiseBlock {
+    top: 0;
+    left: 0;
+    background-color: #420943  ;
+}
+
+#topRightChoiseBlock {
+    top: 0;
+    left: 50%;
+    background-color: #420943 ;
+}
+
+#bottomLeftChoiseBlock {
+    top: 50%;
+    left: 0;
+    background-color: #420943 ;
+}
+
+#bottomRightChoiseBlock {
+    top: 50%;
+    left: 50%;
+    background-color: #420943  ;
+}
