@@ -50,7 +50,7 @@
 }
 
 .imageWrapper .image:hover {
-    background: white;
+    background-repeat: no-repeat;
     background-size: 90% 90%;
 }
 

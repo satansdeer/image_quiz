@@ -16,22 +16,12 @@ $(document).ready(function() {
         return json;
     })();
 
-   // $('#question').html(json.questions[0].question)
-   $('.imageWrapper').mouseenter(function() {
-      $(this).animate({
-          "background-size": 85
-      });
-   });
-   $('.imageWrapper').mouseleave(function() {
-       // $(this).animate({
-       //     height: '-=10px',
-       //     top: '+=5px'
-       // }); 
-   });
-   $('.imageWrapper').click(function(e) {
-       $('#topLeft').attr('src',Math.ceil(Math.random() * 4) + '.svg');
-       $('#topRight').attr('src',Math.ceil(Math.random() * 4) + '.svg');
-       $('#bottomLeft').attr('src',Math.ceil(Math.random() * 4) + '.svg');
-       $('#bottomRight').attr('src',Math.ceil(Math.random() * 4) + '.svg');
-   }); 
+  // $('#question').html(json.questions[0].question)
+
+  $('.imageWrapper').click(function(e) {
+      $('#topLeft').attr('src',Math.ceil(Math.random() * 4) + '.svg');
+      $('#topRight').attr('src',Math.ceil(Math.random() * 4) + '.svg');
+      $('#bottomLeft').attr('src',Math.ceil(Math.random() * 4) + '.svg');
+      $('#bottomRight').attr('src',Math.ceil(Math.random() * 4) + '.svg');
+  }); 
 });
